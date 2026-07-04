@@ -1,0 +1,397 @@
+/* ==================================================
+                BARRA DE NAVEGACIÓN
+================================================== */
+
+/* Cambia el color de fondo de la barra de navegación */
+.navbar{
+    background-color: #000000;
+}
+
+/* Da color blanco y negrita al nombre/logo */
+.navbar-brand{
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Color blanco para todos los enlaces del menú */
+.nav-link{
+    color: white !important;
+    transition: .3s; /* Hace suave el cambio de color */
+}
+
+/* Cambia el color del enlace cuando el mouse pasa encima */
+.nav-link:hover{
+    color: #4f8cff !important;
+}
+
+/* Botón para activar el modo oscuro */
+.btn-darkmode{
+    border: 1px solid white;
+    color: white;
+}
+
+/* Cambia el estilo del botón al pasar el mouse */
+.btn-darkmode:hover{
+    background: white;
+    color: black;
+}
+
+
+/* ==================================================
+                  FOTO DE PERFIL
+================================================== */
+
+/* Convierte la imagen en un círculo */
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    border: 5px solid white; /* Agrega un borde blanco */
+    object-fit: cover; /* Evita que la imagen se deforme */
+}
+
+
+/* ==================================================
+                  REDES SOCIALES
+================================================== */
+
+/* Organiza los iconos horizontalmente */
+.redes{
+    display: flex;
+    justify-content: center; /* Centra los iconos */
+    gap: 15px; /* Espacio entre ellos */
+    margin-top: 20px;
+}
+
+/* Color de los iconos de Font Awesome */
+.fab{
+    color: white;
+}
+
+/* Diseño de cada icono */
+.icono{
+    width: 45px;
+    height: 45px;
+    background: #2d2d2d;
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s;
+}
+
+/* Animación al pasar el mouse */
+.icono:hover{
+    background: #1a0b44;
+    transform: translateY(-5px); /* Lo mueve hacia arriba */
+}
+
+
+/* ==================================================
+                SECCIÓN DE INICIO
+================================================== */
+
+/* Fondo degradado de la sección principal */
+#pinicio{
+    background:
+    radial-gradient(circle at top right,
+    rgb(113,97,253), transparent 30%),
+    linear-gradient(135deg,#051125,#14337c,#4b2eaa);
+}
+
+/* Color blanco para algunos iconos */
+.fa{
+    color: white;
+}
+
+
+/* ==================================================
+                  BOTONES
+================================================== */
+
+/* Botón de proyectos */
+.btn-proyecto{
+    background: linear-gradient(90deg,#3b82f6,#2563eb);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: .3s;
+}
+
+/* Efecto al pasar el mouse */
+.btn-proyecto:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(59,130,246,.4);
+}
+
+/* Botón para descargar CV */
+.btn-cv{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: .3s;
+}
+
+/* Cambia de color al pasar el mouse */
+.btn-cv:hover{
+    background: white;
+    color: #1e3a8a;
+}
+
+
+/* Icono de usuario */
+.fa-user{
+    color: blue;
+}
+
+
+/* ==================================================
+                  HABILIDADES
+================================================== */
+
+/* Organiza las tarjetas en tres columnas */
+.contenedor-habilidades{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+/* Diseño de cada tarjeta */
+.card-habilidad{
+    background: white;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255,255,255,.15);
+    transition: .3s;
+}
+
+/* Animación al pasar el mouse */
+.card-habilidad:hover{
+    transform: translateY(-5px);
+}
+
+/* Tamaño del icono */
+.card-habilidad i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Colores para cada tecnología */
+.html{ color:#f33f0d; }
+.css{ color:#1572B6; }
+.js{ color:#F7DF1E; }
+.bootstrap{ color:#7952B3; }
+.git{ color:#F05032; }
+.vscode{ color:#007ACC; }
+
+
+/* ==================================================
+                  PROYECTOS
+================================================== */
+
+/* Fondo degradado */
+#proyectos{
+    background:
+    radial-gradient(circle at top right,
+    rgb(113,97,253), transparent 30%),
+    linear-gradient(135deg,#26406d,#3b5ca8,#8360f8);
+}
+
+/* Diseño general de las tarjetas */
+.card{
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+/* Levanta la tarjeta */
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/* Ajusta las imágenes */
+.card img{
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* ==================================================
+                    FOOTER
+================================================== */
+
+/* Elimina el subrayado */
+footer a{
+    text-decoration: none;
+    transition: .3s;
+}
+
+/* Cambia el color del enlace */
+footer a:hover{
+    color:#4f8cff !important;
+}
+
+
+/* ==================================================
+              CONFIGURACIÓN GENERAL
+================================================== */
+
+/* Estilo normal del body */
+body{
+    background-color: white;
+    color: black;
+    transition: .3s; /* Hace suave el cambio de tema */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de todos los botones */
+button{
+    padding:10px 20px;
+    cursor:pointer;
+    margin:20px;
+}
+
+
+/* ==================================================
+                MODO OSCURO
+================================================== */
+
+/* Se activa cuando JavaScript agrega la clase dark-mode */
+body.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+
+/* ---------------- Header ---------------- */
+
+/* Cambia el fondo del encabezado */
+body.dark-mode header,
+body.dark-mode .navbar{
+    background:#000 !important;
+}
+
+
+/* ---------------- Secciones ---------------- */
+
+/* Cambia el fondo de todas las secciones */
+body.dark-mode section{
+    background:#181818 !important;
+}
+
+
+/* Fondo de la sección principal */
+body.dark-mode .main{
+    background:
+    linear-gradient(135deg,#111,#1a1a1a,#222) !important;
+}
+
+
+/* ---------------- Textos ---------------- */
+
+/* Cambia todos los textos a blanco */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode span{
+    color:white !important;
+}
+
+
+/* ---------------- Habilidades ---------------- */
+
+/* Cambia el color de las tarjetas */
+body.dark-mode .card-habilidad{
+    background:#2b2b2b !important;
+    color:white !important;
+    border:1px solid #555;
+}
+
+/* Mantiene el título blanco */
+body.dark-mode .card-habilidad h5{
+    color:white !important;
+}
+
+
+/* ---------------- Proyectos ---------------- */
+
+/* Cambia el fondo de las tarjetas */
+body.dark-mode .card{
+    background:#2b2b2b !important;
+    border:1px solid #555;
+}
+
+/* Fondo del cuerpo de la tarjeta */
+body.dark-mode .card-body{
+    background:#2b2b2b !important;
+}
+
+/* Color del título y descripción */
+body.dark-mode .card-title,
+body.dark-mode .card-text{
+    color:white !important;
+}
+
+
+/* ---------------- Botones ---------------- */
+
+/* Botón Bootstrap Outline */
+body.dark-mode .btn-outline-dark{
+    color:white !important;
+    border-color:white !important;
+}
+
+/* Efecto al pasar el mouse */
+body.dark-mode .btn-outline-dark:hover{
+    background:white !important;
+    color:black !important;
+}
+
+
+/* ---------------- Formulario ---------------- */
+
+/* Cambia el fondo de los campos */
+body.dark-mode .form-control{
+    background:#2b2b2b !important;
+    color:white !important;
+    border:1px solid #666;
+}
+
+/* Color del placeholder */
+body.dark-mode .form-control::placeholder{
+    color:#cfcfcf !important;
+}
+
+
+/* ---------------- Footer ---------------- */
+
+/* Cambia el fondo y texto del footer */
+body.dark-mode footer{
+    background:#000 !important;
+    color:white;
+}
+
+/* todas las tarjetas del mismo tamaño */
